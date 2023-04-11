@@ -5,6 +5,7 @@ const { Pool } = require('pg');
 const path = require('path');
 const config = require('./config.js')
 const formRoute = require('./pages/api/submit-petition');
+const firebase = require('./helpers/firebaseauth.js');
 
 
 // Create an instance of Next.js
@@ -32,6 +33,7 @@ app.prepare()
     server.use(bodyParser.urlencoded({ extended: true }));
     server.use(bodyParser.json());
     server.use(formRoute);
+    server.use(firebase);
 
     // Handle form submission
     // server.post('/submit-petition', (req, res) => {

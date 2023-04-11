@@ -3,6 +3,7 @@
     "@next/react-refresh-utils": "^13.3.0",
     "chart.js": "^4.2.1",
     "express": "^4.18.2",
+    "firebase": "^9.19.1",
     "mongodb": "^5.1.0",
     "next": "^13.3.0",
     "pg": "^8.10.0",
